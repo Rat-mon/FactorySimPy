@@ -33,7 +33,7 @@ def run_factory_simulation(simulation_time=40):
     input_buffer = Buffer(
         env,
         id="INPUT_BUFFER",
-        store_capacity=4,
+        capacity=4,
         delay=0.5,
         mode="FIFO",
     )
@@ -41,7 +41,7 @@ def run_factory_simulation(simulation_time=40):
     output_buffer = Buffer(
         env,
         id="OUTPUT_BUFFER",
-        store_capacity=4,
+        capacity=4,
         delay=0.5,
         mode="FIFO",
     )
