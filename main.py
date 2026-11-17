@@ -1,5 +1,7 @@
 import csv
 from pathlib import Path
+import subprocess
+import sys
 
 from segment_logic import (
     NUMBER_OF_SEGMENTS,
@@ -93,3 +95,15 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+    subprocess.run(
+        [
+            sys.executable,
+            "-m",
+            "streamlit",
+            "run",
+            str(Path(__file__).resolve().with_name("operator_console.py")),
+        ],
+        cwd=Path(__file__).resolve().parent,
+        check=True,
+    )
