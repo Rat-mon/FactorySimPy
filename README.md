@@ -3,7 +3,7 @@
 Project Overview
 This project is a Python based system for establishing communication between 1 spinal segments and modeling the processing of communication-check jobs using FactorySimPy
 
-The system has four main parts:
+The system has four main parts:\
 Segment logic: What is going to be done
 Device interface/communication analysis: How the info is shared
 Operator console: Who the info is shared to and seen by
